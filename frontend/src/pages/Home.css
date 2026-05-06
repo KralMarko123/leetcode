@@ -1,0 +1,339 @@
+.home-page .hero-card {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	align-items: center;
+	gap: 2rem;
+
+	padding: 1.5rem;
+}
+
+.home-page .hero-copy {
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+	max-width: 760px;
+}
+
+.home-page .hero-copy .paragraph {
+	max-width: 670px;
+}
+
+.home-page .hero-metrics {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(7.5rem, 1fr));
+	gap: 0.75rem;
+}
+
+.home-page .metric-pill {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+
+	min-height: 4.25rem;
+	padding: 0.85rem 1rem;
+
+	background-color: var(--secondary-100);
+	border: 1px solid var(--border-color);
+	border-radius: var(--simple-radius);
+}
+
+.home-page .metric-pill strong {
+	color: var(--text-color);
+	font-family: var(--secondary-font-family);
+	font-size: 1.55rem;
+	line-height: 1;
+}
+
+.home-page .metric-pill span {
+	color: var(--muted-text-color);
+	font-weight: 700;
+}
+
+.home-page .metric-pill.easy {
+	background-color: var(--success-100);
+	border-color: var(--success-200);
+}
+
+.home-page .metric-pill.medium {
+	background-color: var(--warning-100);
+	border-color: var(--warning-200);
+}
+
+.home-page .metric-pill.hard {
+	background-color: var(--danger-100);
+	border-color: var(--danger-200);
+}
+
+.home-page .solution-toolbar {
+	display: grid;
+	grid-template-columns: minmax(18rem, 1fr) auto;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.85rem;
+}
+
+.home-page .search-control {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+
+	min-height: 3rem;
+	padding: 0 0.9rem;
+
+	color: var(--muted-text-color);
+	background-color: var(--secondary-100);
+	border: 1px solid var(--border-color);
+	border-radius: var(--simple-radius);
+}
+
+.home-page .search-control svg {
+	flex: 0 0 auto;
+}
+
+.home-page .search-control input {
+	width: 100%;
+	min-width: 0;
+
+	color: var(--text-color);
+	background: transparent;
+	border: 0;
+	outline: 0;
+}
+
+.home-page .search-control:focus-within {
+	border-color: var(--accent-200);
+	background-color: var(--main-100);
+}
+
+.home-page .results-heading {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.home-page .page-indicator {
+	color: var(--muted-text-color);
+	font-family: var(--secondary-font-family);
+	font-size: 0.9rem;
+}
+
+.home-page .problem-container {
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.home-page .problem-box {
+	position: relative;
+
+	min-height: 17.5rem;
+	padding: 1rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-between;
+	gap: 1rem;
+
+	color: var(--text-color);
+	background-color: var(--main-100);
+	border: 1px solid var(--border-color);
+	border-radius: var(--simple-radius);
+	box-shadow:
+		5px 5px 0 var(--main-200),
+		var(--simple-shadow);
+
+	text-align: left;
+
+	cursor: pointer;
+	animation: enter 0.35s ease both;
+	transition:
+		border-color 0.2s ease,
+		box-shadow 0.2s ease,
+		transform 0.2s ease;
+}
+
+.home-page .problem-box:hover,
+.home-page .problem-box:focus-visible {
+	border-color: var(--accent-200);
+	box-shadow:
+		8px 8px 0 var(--main-300),
+		var(--lifted-shadow);
+	transform: translate(-2px, -2px);
+}
+
+.home-page .problem-box.easy {
+	box-shadow:
+		5px 5px 0 var(--success-200),
+		var(--simple-shadow);
+}
+
+.home-page .problem-box.easy:hover,
+.home-page .problem-box.easy:focus-visible {
+	border-color: var(--success-300);
+	box-shadow:
+		8px 8px 0 var(--success-200),
+		var(--lifted-shadow);
+}
+
+.home-page .problem-box.medium {
+	box-shadow:
+		5px 5px 0 var(--warning-200),
+		var(--simple-shadow);
+}
+
+.home-page .problem-box.medium:hover,
+.home-page .problem-box.medium:focus-visible {
+	border-color: var(--warning-300);
+	box-shadow:
+		8px 8px 0 var(--warning-200),
+		var(--lifted-shadow);
+}
+
+.home-page .problem-box.hard {
+	box-shadow:
+		5px 5px 0 var(--danger-200),
+		var(--simple-shadow);
+}
+
+.home-page .problem-box.hard:hover,
+.home-page .problem-box.hard:focus-visible {
+	border-color: var(--danger-300);
+	box-shadow:
+		8px 8px 0 var(--danger-200),
+		var(--lifted-shadow);
+}
+
+.home-page .problem-card-header,
+.home-page .problem-card-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+}
+
+.home-page .problem-box-number {
+	color: var(--accent-300);
+	font-family: var(--secondary-font-family);
+	font-size: 0.95rem;
+	font-weight: 800;
+}
+
+.home-page .problem-box p {
+	color: var(--muted-text-color);
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.home-page .problem-card-footer {
+	margin-top: auto;
+	padding-top: 0.9rem;
+	border-top: 1px solid var(--border-color);
+}
+
+.home-page .problem-card-footer span {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+
+	color: var(--muted-text-color);
+	font-family: var(--secondary-font-family);
+	font-size: 0.82rem;
+	font-weight: 700;
+}
+
+.home-page .problem-pagination {
+	align-self: center;
+
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.home-page .pagination-button,
+.home-page .action-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 3rem;
+	height: 3rem;
+
+	color: var(--text-color);
+	background-color: var(--main-100);
+	border: 1px solid var(--border-color);
+	border-radius: var(--simple-radius);
+	box-shadow: var(--simple-shadow);
+
+	cursor: pointer;
+	transition:
+		border-color 0.2s ease,
+		opacity 0.2s ease,
+		transform 0.2s ease;
+}
+
+.home-page .pagination-button:hover,
+.home-page .pagination-button:focus-visible {
+	border-color: var(--accent-200);
+	transform: translateY(-1px);
+}
+
+.home-page .pagination-button:disabled {
+	opacity: 0.45;
+	cursor: not-allowed;
+	transform: none;
+}
+
+.home-page .pagination-button svg {
+	width: 1.35rem;
+	height: 1.35rem;
+}
+
+.home-page .empty-state {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+	.home-page .hero-card,
+	.home-page .solution-toolbar {
+		grid-template-columns: 1fr;
+	}
+
+	.home-page .problem-filter {
+		justify-content: flex-start;
+	}
+
+	.home-page .problem-container {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 768px) {
+	.home-page .hero-card {
+		padding: 1rem;
+	}
+
+	.home-page .hero-metrics,
+	.home-page .problem-container {
+		grid-template-columns: 1fr;
+	}
+
+	.home-page .solution-toolbar {
+		padding: 0.75rem;
+	}
+
+	.home-page .results-heading {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.home-page .problem-box {
+		min-height: 14rem;
+	}
+}

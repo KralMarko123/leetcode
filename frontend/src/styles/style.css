@@ -1,0 +1,68 @@
+.title {
+	color: var(--text-color);
+	font-size: 2.85rem;
+	line-height: 1.05;
+	letter-spacing: 0;
+}
+
+.title.secondary {
+	font-size: 1.25rem;
+	line-height: 1.2;
+}
+
+.paragraph {
+	color: var(--muted-text-color);
+	font-size: 1.05rem;
+	line-height: 1.65;
+}
+
+.eyebrow {
+	color: var(--accent-300);
+	font-family: var(--secondary-font-family);
+	font-size: 0.78rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.difficulty-badge {
+	display: inline-flex;
+	align-items: center;
+	width: fit-content;
+	min-height: 1.75rem;
+	padding: 0.25rem 0.65rem;
+	border-radius: 999px;
+	font-family: var(--secondary-font-family);
+	font-size: 0.78rem;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.difficulty-badge.easy {
+	color: var(--success-400);
+	background-color: var(--success-100);
+}
+
+.difficulty-badge.medium {
+	color: var(--warning-300);
+	background-color: var(--warning-100);
+}
+
+.difficulty-badge.hard {
+	color: var(--danger-300);
+	background-color: var(--danger-100);
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 2.15rem;
+	}
+
+	.title.secondary {
+		font-size: 1.1rem;
+	}
+
+	.paragraph {
+		font-size: 1rem;
+		line-height: 1.55;
+	}
+}

@@ -1,0 +1,54 @@
+.card {
+	width: fit-content;
+	padding: 1.25rem;
+
+	background-color: var(--main-100);
+	border: 1px solid var(--border-color);
+	border-radius: var(--simple-radius);
+	box-shadow: var(--simple-shadow);
+}
+
+.card.fullwidth {
+	width: 100%;
+}
+
+.card[role='button'] {
+	cursor: pointer;
+	transition:
+		border-color 0.2s ease,
+		box-shadow 0.2s ease,
+		transform 0.2s ease;
+}
+
+.card[role='button']:hover,
+.card[role='button']:focus-visible {
+	border-color: var(--accent-200);
+	box-shadow: var(--lifted-shadow);
+	transform: translateY(-2px);
+}
+
+.success.card {
+	background-color: var(--success-100);
+	border-color: var(--success-200);
+}
+
+.secondary.card {
+	background-color: var(--secondary-100);
+}
+
+.danger.card {
+	background-color: var(--danger-100);
+	border-color: var(--danger-200);
+}
+
+.paragraph .highlight {
+	color: var(--accent-300);
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+.link-container {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}

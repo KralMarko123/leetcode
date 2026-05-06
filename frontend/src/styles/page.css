@@ -1,0 +1,19 @@
+.page {
+	position: relative;
+
+	width: 100%;
+	min-height: 100vh;
+	padding: 2rem;
+
+	background-color: var(--background-color);
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+	.page {
+		padding: 1rem;
+	}
+}
