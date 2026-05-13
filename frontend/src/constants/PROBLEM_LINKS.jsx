@@ -34,3 +34,4 @@ export const VALID_PARENTHESES_LINK = 'https://leetcode.com/problems/valid-paren
 export const FIND_DISAPPEARED_NUMBERS_LINK = 'https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array';
 
 export const LETTER_COMBINATIONS_OF_A_PHONE_NUMBER_LINK = 'https://leetcode.com/problems/letter-combinations-of-a-phone-number/';
+export const DIVIDE_TWO_INTEGERS_LINK = 'https://leetcode.com/problems/divide-two-integers/';
