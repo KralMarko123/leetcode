@@ -520,3 +520,50 @@ export const DIVIDE_TWO_INTEGERS_SNIPPET = `public static class DivideTwoInteger
         return (int)(result * (isNegative ? -1 : 1));
     }
 }`
+export const MERGE_STRINGS_ALTERNATELY_SNIPPET = `public static class MergeStringsAlternately
+{
+    public static string MergeAlternately(string word1, string word2)
+    {
+        var i = 0;
+        var j = 0;
+        var result = string.Empty;
+
+        while (true)
+        {
+            if(i < word1.Length)
+            {
+                result += word1[i];
+                i++;
+            }
+            
+            if(j < word2.Length)
+            {
+                result += word2[j];
+                j++;
+            }
+            
+            if(i == word1.Length && j == word2.Length) break;
+        }
+        
+        return result;
+    }
+}`
+export const GREATEST_COMMON_DIVISOR_OF_STRINGS_SNIPPET = `public static class GreatestCommonDivisorOfStrings
+{
+    public static string GcdOfStrings(string str1, string str2) 
+    {
+        // checks if they have same letters and order of letters
+        if (!(str1 + str2).Equals(str2 + str1)) return "";
+
+        var a = str1.Length; 
+        var b = str2.Length;
+        
+        while (b > 0) {
+            var temp = b;
+            b = a % b;
+            a = temp;
+        }
+        
+        return str1[..a];
+    }
+}`

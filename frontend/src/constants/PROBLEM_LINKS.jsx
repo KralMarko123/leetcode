@@ -35,3 +35,5 @@ export const FIND_DISAPPEARED_NUMBERS_LINK = 'https://leetcode.com/problems/find
 
 export const LETTER_COMBINATIONS_OF_A_PHONE_NUMBER_LINK = 'https://leetcode.com/problems/letter-combinations-of-a-phone-number/';
 export const DIVIDE_TWO_INTEGERS_LINK = 'https://leetcode.com/problems/divide-two-integers/';
+export const MERGE_STRINGS_ALTERNATELY_LINK = 'https://leetcode.com/problems/merge-strings-alternately';
+export const GREATEST_COMMON_DIVISOR_OF_STRINGS_LINK = 'https://leetcode.com/problems/greatest-common-divisor-of-strings/';
